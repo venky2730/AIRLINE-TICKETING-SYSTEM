@@ -1,0 +1,139 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+
+<style>
+
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 32px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #ADD8E6;
+}
+</style>
+
+</head>
+
+<body align="center">
+  
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a href="hotels.html">Hotels</a></li>
+  <li><a href="holidaypackage.html">HolidayPackage</a></li>
+  <li><a href="cabs.html">Cabs</a></li>
+  <li><a href="visa.html">Visa</a></li>
+  <li><a class="active" href="news.html">News</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+<h1>hi</h1>
+<h2  style="color:white;background-color:LightBlue">Stark Times-International</h2>
+<a href="rnews.html">
+  <input type="button" value="Regional" />
+</a>
+
+<a href="nnews.html">
+<input type="button" value="National" />
+</a>
+<a href="inews.html">
+<input type="button" value="International" />
+</a>
+
+    
+      
+    </body>
+<style>
+    h1{
+    font-family:Sans-serif,Helvetica;
+    }
+    h1{
+     font-family: "Century Gothic"
+    }
+    body {
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-size: 19px;
+    }
+    table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: whitesmoke;
+}
+    </style>
+    <body onload="startTime()",>
+        <h2>TIME</h2>
+            
+            <div id="txt"></div>
+            
+            <script>
+            function startTime() {
+              const today = new Date();
+              let h = today.getHours();
+              let m = today.getMinutes();
+              let s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+              setTimeout(startTime, 1000);
+            }
+            
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i}; 
+              return i;
+            }
+            </script>
+              <table align="center" >
+                <tr>
+                  <td><img src="https://bsmedia.business-standard.com/_media/bs/img/article/2021-11/06/full/1636195914-996.jpg?im=Resize,width=220" alt="alternatetext"></td>
+                  <td>
+                    <a href="https://www.business-standard.com/article/international/new-zealand-reopens-to-international-tourists-after-two-yr-hiatus-122050200113_1.html">New Zealand Reopens To International Tourists After Two-Yr Hiatus</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="https://img.etimg.com/thumb/msid-91763629,width-100,height-75/industry/transportation/airlines-/-aviation/net-zero-is-biggest-challenge-for-aviation-etihad-ceo.jpg" alt="alternatetext"  style="width:300px;height:150px;"></td>
+                  <td><a href="https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/net-zero-is-biggest-challenge-for-aviation-etihad-ceo/articleshow/91763629.cms">Net zero is 'biggest challenge' for aviation: Etihad CEO
+                    </a></td>
+                
+                </tr>
+                <tr>
+                  <td><img src="https://img.etimg.com/thumb/msid-91972745,width-100,height-75/industry/transportation/airlines-/-aviation/finally-boarding-time-for-singapore-airlines-flight-to-india.jpg" alt="alternatetext" style="width:300px;height:150px;"></td>
+                  <td><a href="https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/finally-boarding-time-for-singapore-airlines-flight-to-india/articleshow/91972745.cms">Finally, boarding time for Singapore Airlines’ flight to India</a></td>
+                
+                </tr>
+                </table>
+            
+            </body>
+
+</html>

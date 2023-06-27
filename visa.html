@@ -1,0 +1,90 @@
+<html>
+<head>
+  <script src="visa.js"></script>
+
+<style>
+
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 32px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #ADD8E6;
+}
+</style>
+
+</head>
+
+<body align="center">
+  <script>
+  function openPage()
+  {
+        var x= document.getElementById("cname").value;
+
+        document.getElementById("cname").innerHTML = 
+            "Welcome to Geeks For Geeks "+ x ;
+  }
+</script>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a href="hotels.html">Hotels</a></li>
+  <li><a href="holidaypackage.html">HolidayPackage</a></li>
+  <li><a href="cabs.html">Cabs</a></li>
+  <li><a class="active" href="visa.html">Visa</a></li>
+  <li><a href="news.html">News</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+<h1>where to fly</h1>
+<h2  style="color:white;background-color:LightBlue">Stark Airlines</h2>
+<h3>GET VISA</h3>
+<form action="file:///C:/Users/system114/Desktop/fly2.html" >
+    <label for="cname">Country:</label>
+    <input type="text" id="cname" name="cname" value="">
+    <button type="button" onclick="openEmbassyPage()">Open</button>
+   
+  </form>
+</body>
+<style>
+    h1{
+    font-family:Sans-serif,Helvetica;
+    }
+    h1{
+     font-family: "Century Gothic"
+    }
+    body {
+        background-image: url('https://www.smartertravel.com/wp-content/uploads/2013/09/air-two_planes_one_parked_another_taking_off.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-size: 20px;
+    }
+    </style>
+</html>

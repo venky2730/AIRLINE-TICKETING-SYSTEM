@@ -1,0 +1,135 @@
+<html>
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 32px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #ADD8E6;
+}
+</style>
+
+</head>
+
+<body align="center">
+  
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a href="hotels.html">Hotels</a></li>
+  <li><a href="holidaypackage.html">HolidayPackage</a></li>
+  <li><a href="cabs.html">Cabs</a></li>
+  <li><a href="visa.html">Visa</a></li>
+  <li><a class="active" href="news.html">News</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+<h1>hi</h1>
+<h2  style="color:white;background-color:LightBlue">Stark Times-Regional</h2>
+<a href="rnews.html">
+  <input type="button" value="Regional" />
+</a>
+
+<a href="nnews.html">
+<input type="button" value="National" />
+</a>
+<a href="inews.html">
+<input type="button" value="International" />
+</a>
+
+    
+      
+    </body>
+<style>
+    h1{
+    font-family:Sans-serif,Helvetica;
+    }
+    h1{
+     font-family: "Century Gothic"
+    }
+    body {
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-size: 19px;
+    }
+    table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: whitesmoke;
+}
+    </style>
+    <body onload="startTime()",>
+    <h2>TIME</h2>
+        
+        <div id="txt"></div>
+        
+        <script>
+        function startTime() {
+          const today = new Date();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          let s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+          setTimeout(startTime, 1000);
+        }
+        
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i}; 
+          return i;
+        }
+        </script>
+        <table align="center" >
+            <tr>
+              <td><img src="https://i.ndtvimg.com/i/2016-07/airport-generic_240x180_81468313992.jpg" alt="alternatetext"></td>
+              <td>
+                <a href="https://www.ndtv.com/andhra-pradesh-news/at-least-7-new-airports-to-come-up-in-andhra-2719773">Andhra Pradesh To Get 7 New Airports</a>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="https://c.ndtvimg.com/2021-02/olpq49jg_air-india-express-andhra_120x90_20_February_21.jpg" alt="alternatetext"  style="width:300px;height:150px;"></td>
+              <td><a href="https://www.ndtv.com/andhra-pradesh-news/air-india-express-plane-accident-at-andhra-vijayawada-airport-due-to-pilot-error-report-2377260">Air India Express Accident At Andhra Airport Due To Pilot Error: Report</a></td>
+            
+            </tr>
+            <tr>
+              <td><img src="https://c.ndtvimg.com/2020-01/qql3a7qo_airport-screening-generic_120x90_22_January_20.jpg" alt="alternatetext" style="width:300px;height:150px;"></td>
+              <td><a href="https://www.ndtv.com/india-news/coronavirus-woman-returnee-from-uk-who-took-train-to-andhra-has-uk-covid-variant-2345261">Woman Who Returned From UK, Took Train To Andhra, Has UK Covid Variant</a></td>
+            
+            </tr>
+            </table>
+        
+        </body>
+</html>

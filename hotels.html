@@ -1,0 +1,80 @@
+<html>
+<head>
+  <script src="hotels.js"></script>
+
+<style>
+
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 32px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #ADD8E6;
+}
+</style>
+
+</head>
+
+<body align="center">
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a class="active" href="hotels.html">Hotels</a></li>
+  <li><a href="holidaypackage.html">HolidayPackage</a></li>
+  <li><a href="cabs.html">Cabs</a></li>
+  <li><a href="visa.html">Visa</a></li>
+  <li><a href="news.html">News</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+<h1>where to fly</h1>
+<h2  style="color:white;background-color:LightBlue">Stark Airlines</h2>
+<h3>ENTER CITY</h3>
+<form action="file:///C:/Users/system114/Desktop/fly2.html" >
+    <label for="cname">City:</label>
+    <input type="text" id="cname" name="cname" value="">
+    <button type="button" onclick="openhotelPage()">Search</button>
+  </form>
+</body>
+<style>
+    h1{
+    font-family:Sans-serif,Helvetica;
+    }
+    h1{
+     font-family: "Century Gothic"
+    }
+    body {
+      background-image: url('https://m.economictimes.com/thumb/msid-89465809,width-1254,height-836,resizemode-4,imgsize-28786/indian-hotels.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-size: 20px;
+    }
+    </style>
+</html>
